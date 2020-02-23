@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <title>The Marketplace</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+
+        /* Remove extra left and right margins, due to padding */
+        .row {margin: 0 -5px;}
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Style the counter cards */
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body class = "bg-dark" >
+<div class = "container bg-white">
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">The Marketplace</a>
+        <div class="navbar-collapse" id="navbarsDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+        </div>
+    </nav>
+    <div>
+        <h1>Our Mission Statement</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur varius hendrerit diam, id ultricies mi tristique in. Integer vitae augue sit amet ipsum sodales auctor vel at tellus. Nullam turpis enim, fermentum gravida tempus ac, vestibulum ut turpis. Quisque et elementum lorem, eu aliquam mi. Vivamus finibus, sem vel porttitor tempus, eros nisl accumsan quam, eget scelerisque lacus ante at tellus. Donec porttitor lectus et augue consequat commodo. Duis imperdiet odio vel metus ullamcorper commodo. Sed gravida lectus et tempus commodo. Donec eget tortor nec felis euismod rutrum eget eget ante. Quisque in mauris urna. Donec tincidunt eget lacus sit amet suscipit. Ut quis libero non ante pretium efficitur quis vel purus. </p>
+        <p>Phasellus mattis risus quis nibh hendrerit malesuada. Aliquam volutpat, mi eget pellentesque auctor, nunc ligula lobortis justo, in feugiat libero massa at tellus. Vestibulum non ipsum vitae est luctus rhoncus sed et ligula. Etiam non molestie est. In congue, ligula eu eleifend posuere, orci urna iaculis metus, non mollis lectus orci et nisi. Vivamus turpis massa, sodales id enim vel, ultricies dignissim ipsum. Integer dolor metus, hendrerit quis vulputate sit amet, dictum a dolor. Nam quis quam elementum, dictum orci eu, vulputate metus. Praesent quis mauris lacinia ligula scelerisque efficitur eget non diam. Mauris et justo eu nibh hendrerit sollicitudin. Donec cursus nibh egestas dapibus condimentum. Quisque luctus congue posuere. Fusce laoreet placerat facilisis. Integer sollicitudin odio et augue commodo porttitor. Aliquam a velit in est tincidunt facilisis eu vel ipsum.</p>
+        <p>Aliquam ex arcu, bibendum id luctus id, feugiat in quam. Phasellus eros nisl, consequat et neque a, sollicitudin faucibus urna. Quisque porta lacus sed est sagittis, et venenatis dui molestie. Suspendisse vel felis elit. Sed lorem ligula, lacinia sed aliquam eu, semper egestas lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed pulvinar tempus pretium. Proin rutrum dolor in augue tincidunt vestibulum. Suspendisse accumsan odio justo, et tempus urna volutpat varius. Proin ultrices commodo risus, hendrerit luctus massa pharetra eu. Etiam vitae viverra nunc. Morbi vitae neque posuere, viverra odio a, viverra odio. </p>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+    </div>
+    <footer id="sticky-footer" class="py-4 bg-light text-black-50">
+        <div class="container text-center">
+            <small>Copyright &copy; The Marketplace</small>
+            <br>
+            <small>(555)-555-5555, 22 Mayhill Street, Saddle Brook, NJ</small>
+        </div>
+
+    </footer>
+</div>
+<script src="static/landing.js" charset="utf-8"></script>
+</body>
+</html>
