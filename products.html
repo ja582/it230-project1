@@ -7,46 +7,8 @@
     <link rel="stylesheet" href="style/style.css">
     <title>The Marketplace</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        /* Float four columns side by side */
-        .column {
-            float: left;
-            width: 25%;
-            padding: 0 10px;
-        }
-
-        /* Remove extra left and right margins, due to padding */
-        .row {margin: 0 -5px;}
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-
-        /* Responsive columns */
-        @media screen and (max-width: 600px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-        }
-
-        /* Style the counter cards */
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            padding: 16px;
-            text-align: center;
-            background-color: #f1f1f1;
+        .row {
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -70,39 +32,41 @@
         <p>Phasellus mattis risus quis nibh hendrerit malesuada. Aliquam volutpat, mi eget pellentesque auctor, nunc ligula lobortis justo, in feugiat libero massa at tellus. Vestibulum non ipsum vitae est luctus rhoncus sed et ligula. Etiam non molestie est. In congue, ligula eu eleifend posuere, orci urna iaculis metus, non mollis lectus orci et nisi. Vivamus turpis massa, sodales id enim vel, ultricies dignissim ipsum. Integer dolor metus, hendrerit quis vulputate sit amet, dictum a dolor. Nam quis quam elementum, dictum orci eu, vulputate metus. Praesent quis mauris lacinia ligula scelerisque efficitur eget non diam. Mauris et justo eu nibh hendrerit sollicitudin. Donec cursus nibh egestas dapibus condimentum. Quisque luctus congue posuere. Fusce laoreet placerat facilisis. Integer sollicitudin odio et augue commodo porttitor. Aliquam a velit in est tincidunt facilisis eu vel ipsum.</p>
         <p>Aliquam ex arcu, bibendum id luctus id, feugiat in quam. Phasellus eros nisl, consequat et neque a, sollicitudin faucibus urna. Quisque porta lacus sed est sagittis, et venenatis dui molestie. Suspendisse vel felis elit. Sed lorem ligula, lacinia sed aliquam eu, semper egestas lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed pulvinar tempus pretium. Proin rutrum dolor in augue tincidunt vestibulum. Suspendisse accumsan odio justo, et tempus urna volutpat varius. Proin ultrices commodo risus, hendrerit luctus massa pharetra eu. Etiam vitae viverra nunc. Morbi vitae neque posuere, viverra odio a, viverra odio. </p>
     </div>
-    <div class="row">
-        <div class="column">
-            <div class="card">
-                <h3>Card 1</h3>
-                <p>Some text</p>
-                <p>Some text</p>
-            </div>
+    <div>
+        <div class="form-group" style="margin-right: 20px;">
+            <label for="orderBy">Order By</label>
+            <select id="orderBy" name="orderBy">
+                <option value="name">Name</option>
+                <option value="artist">Artist</option>
+                <option value="year">Year</option>
+            </select>
         </div>
 
-        <div class="column">
-            <div class="card">
-                <h3>Card 2</h3>
-                <p>Some text</p>
-                <p>Some text</p>
-            </div>
+        <div class="form-group" style="margin-right: 20px;">
+            <label for="orderBy">Price Range</label>
+            <select id="orderBy" name="orderBy">
+                <option value="name">Name</option>
+                <option value="published">Artist</option>
+                <option value="_id">Year</option>
+            </select>
         </div>
-
-        <div class="column">
-            <div class="card">
-                <h3>Card 3</h3>
-                <p>Some text</p>
-                <p>Some text</p>
-            </div>
-        </div>
-
-        <div class="column">
-            <div class="card">
-                <h3>Card 4</h3>
-                <p>Some text</p>
-                <p>Some text</p>
+    </div>
+    <div class ="row">
+    <div class="card-deck">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img-top" src="imgs/1.jpg">
+                <h3>name</h3>
+                <p>artist</p>
+                <p>year</p>
             </div>
         </div>
     </div>
+    </div>
+
+
+
+
     <footer id="sticky-footer" class="py-4 bg-light text-black-50">
         <div class="container text-center">
             <small>Copyright &copy; The Marketplace</small>
@@ -112,6 +76,6 @@
 
     </footer>
 </div>
-<script src="static/landing.js" charset="utf-8"></script>
+<script src="static/productList.js" charset="utf-8"></script>
 </body>
 </html>
