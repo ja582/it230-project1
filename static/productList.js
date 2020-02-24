@@ -34,10 +34,10 @@ const mockDatabase = [
     {
         img: 'imgs/Jeff_Beck-Truth.jpg',
         name: 'Truth',
-        artist: 'Beatles',
+        artist: 'Jeff Beck',
         year: '1968',
         price: '89',
-        categories: ['Blues Rock', 'Hard Rock', '70s'],
+        categories: ['Blues Rock', 'Hard Rock', '60s'],
     },
 ];
 
@@ -54,12 +54,22 @@ function renderData(results){
     }
     renderData(mockDatabase);
 
-function showArtists(artistName){
-    var artists = mockDatabase.filter(function(e){
-        return e.artist = artistName;
-    })
-    renderData(showArtists);
-    console.log(artists);
+
+function orderFuncArtistName(decade){
+    var searcher = mockDatabase.filter(function (e) {
+        return e.categories.includes(decade);
+    });
+    renderData(searcher);
+    console.log(searcher);
 }
 
+
+document.querySelector('#priceRange').addEventListener('change', function(event){
+    orderPriceRangee(event.target.value);
+});
+
+
+document.querySelector('#catBy').addEventListener('change', function(event){
+    orderFuncArtistName(event.target.value);
+});
 
