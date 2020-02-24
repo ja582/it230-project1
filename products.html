@@ -33,24 +33,33 @@
         <p>Aliquam ex arcu, bibendum id luctus id, feugiat in quam. Phasellus eros nisl, consequat et neque a, sollicitudin faucibus urna. Quisque porta lacus sed est sagittis, et venenatis dui molestie. Suspendisse vel felis elit. Sed lorem ligula, lacinia sed aliquam eu, semper egestas lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed pulvinar tempus pretium. Proin rutrum dolor in augue tincidunt vestibulum. Suspendisse accumsan odio justo, et tempus urna volutpat varius. Proin ultrices commodo risus, hendrerit luctus massa pharetra eu. Etiam vitae viverra nunc. Morbi vitae neque posuere, viverra odio a, viverra odio. </p>
     </div>
     <div>
-        <div class="form-group" style="margin-right: 20px;">
-            <label for="orderBy">Order By</label>
-            <select id="orderBy" name="orderBy">
-                <option value="name">Name</option>
-                <option value="artist">Artist</option>
-                <option value="year">Year</option>
-            </select>
+        <div>
+            <div class="form-group" style="margin-right: 20px;">
+                <label for="orderBy">Order By</label>
+                <select id="orderBy" name="orderBy">
+                    <option value="name">Name</option>
+                    <option value="artist">Artist</option>
+                    <option value="year">Year</option>
+                </select>
+            </div>
+            <div class="form-group" style="margin-right: 20px;">
+                <label for="priceRange">Price Range</label>
+                <select id="priceRange" name="priceRange">
+                    <option value="underTen">< 10</option>
+                    <option value="overTen">10 ></option>
+                </select>
+            </div>
+            <div class="form-group" style="margin-right: 20px;">
+                <label for="catBy">Categorized by </label>
+                <select id="catBy" name="catBy">
+                    <option value="60s">60s</option>
+                    <option value="70s">70s</option>
+                    <option value="80s">80s</option>
+                    <option value="90s">90s</option>
+                </select>
+            </div>
         </div>
 
-        <div class="form-group" style="margin-right: 20px;">
-            <label for="orderBy">Price Range</label>
-            <select id="orderBy" name="orderBy">
-                <option value="name">Name</option>
-                <option value="published">Artist</option>
-                <option value="_id">Year</option>
-            </select>
-        </div>
-    </div>
     <div class ="row">
     <div class="card-deck">
         <div class="card">
